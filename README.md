@@ -1,5 +1,7 @@
 # MT-SLVR: Multi-Task Self-Supervised Learning for Transformation In(Variant) Representations
-A novel multi-task self-supervised learing pproach, capable of learning both augmenattion invarinat and equivariant features in a parameter effecient manner.  
+A novel multi-task self-supervised learning approach, capable of learning both augmentation invariant and equivariant features in a parameter efficient manner.  
+
+![Logo](images/logo.png)
 
 ## News & Citation
  - Blog and more informal breakdown coming soon! 
@@ -51,12 +53,3 @@ Hyperparameter descriptions can be found in the ["NEW_RUN.py"](https://github.co
 
 ## Baseline Codebases
 Details on running baselines can be found in their respective sub-codebases. 
-
-
-
-
-
-
-
-
-
