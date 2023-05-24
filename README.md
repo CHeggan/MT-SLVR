@@ -3,6 +3,8 @@ A novel multi-task self-supervised learning approach, capable of learning both a
 
 ![Logo](images/logo.png =250x250)
 
+<img src=images/logo.png data-canonical-src=images/logo.png width="200" height="400" />
+
 ## News & Citation
  - Blog and more informal breakdown coming soon! 
  - 29/5/23: Paper and code made public
