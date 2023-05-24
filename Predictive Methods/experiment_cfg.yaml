@@ -1,0 +1,74 @@
+# Contains all required experiment parameters
+
+base:
+  #experiment_name: 'trial_0'
+  # int or 'cpu'
+  cuda:
+  # int or 'random'
+  seed: 'random'
+
+model:
+  name: 'resnet18'
+  # dims: 1
+  # in_channels: 1
+  encoder_fc_dim: 1000
+  # Final output size of the projection head of framework
+  final_out_dim: # Hardcoded for now
+
+aug_control:
+  augs_to_exclude: # Take form argparse
+  fixed_k: False
+  k: 7
+  batch_wise: False
+
+training:
+  framework: 'Predict'
+  # batch_size: 32     # Batch size is an important param in contrastive learning
+
+  epochs: 1000
+  val_gap: 50 # How many training batches to optimise on before doing a validation pass
+  num_workers: 1
+
+# Optimiser hyperparams
+hyper:
+  initial_lr: # argparse for now
+  weight_decay: 0.000001 #x10-6 (og simclr paper)
+
+early_stopping:
+  patience: 100
+  delta: 0
+  verbose: True
+
+
+data:
+  #name: FSD50K
+  norm: global
+
+
+FSD50K:
+  variable: True
+  path: C:/Users/s1529508/Documents/Datasets/FSD50k/FSD50k_train_val_pt_with_labels
+  backup_path: X:/Datasets/FSD50k/FSD50k_train_val_pt_with_labels
+  stats: FSD50k_train_stats
+  train_files: FSD50k_train_files
+  val_files: FSD50k_val_files
+
+
+AS_BAL:
+  variable: False
+  path: X:/Datasets/AS/AS_balanced_train_pt_w_labels
+  stats: AS_BAL_train_stats
+  train_files: AS_BAL_train_files
+  val_files: AS_BAL_val_files
+  ext: .pt
+  label: True
+
+
+
+# Fourier transform params
+ft_params: 
+  sample_rate: 16000
+  n_mels: 128
+  n_fft: 1024
+  hop_length: 512
+  power: 2

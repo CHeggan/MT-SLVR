@@ -1,0 +1,106 @@
+# Contains all required experiment parameters
+
+#########################
+# BASE SETTINGS
+#########################
+base:
+  # int, True or 'cpu'
+  cuda: '0'
+  seed: 42
+
+#########################
+# MODEL/ENCODER
+#########################
+model:
+  name: 'resnet18'
+  # model_fc_out: 1000 
+
+adapters:
+  task_mode:  # series_adapters/parallel_adapters/bn/split
+  num_tasks: 2 # we set this equal to the number of augmentations being used, have 7 in total
+  num_splits: # Number of splits in the fc layer in backbone
+
+
+aug_control:
+  augs_to_exclude: # Take form argparse
+  fixed_k: False
+  k: 7
+  batch_wise: False
+
+#########################
+# GENERAL TRAINING
+#########################
+training:
+  #framework: simclrv1 #simsiam/simclrv1
+  #batch_size: 32     # Batch size is an important param in contrastive learning 
+  epochs: 1000
+  val_gap: 50 # How many training batches to optimise on before doing a validation pass
+  num_workers: 4
+
+hyper:
+  initial_lr: # argparse for now
+  weight_decay: 0.000001 #x10-6 (og simclr paper)
+
+#########################
+# EARLY STOPPING
+#########################
+# Params to control early stopping criteria
+early_stopping:
+  patience: 50
+  delta: 0.001
+  verbose: True
+
+#########################
+# DATA
+#########################
+data:
+  #name: FSD50K
+  norm: global
+
+
+FSD50K:
+  variable: True
+  path: C:/Users/user/Documents/Datasets/FSD50k/FSD50k_train_val_pt_with_labels
+  backup_path: X:/Datasets/FSD50k/FSD50k_train_val_pt_with_labels
+  stats: FSD50k_train_stats
+  train_files: FSD50k_train_files
+  val_files: FSD50k_val_files
+  ext: .pt
+  label: True
+
+
+AS_BAL:
+  variable: False
+  path: /localdisk/home/shared/s1529508/AS_balanced_train_pt_w_labels
+  stats: AS_BAL_train_stats
+  train_files: AS_BAL_train_files
+  val_files: AS_BAL_val_files
+  ext: .pt
+  label: True
+
+
+
+#########################
+# DATA PROCESSING 
+#########################
+# Fourier transform params, used in batch work prep functions
+ft_params: 
+  sample_rate: 16000
+  n_mels: 128
+  n_fft: 1024
+  hop_length: 512
+  power: 2
+
+
+
+
+# SimSiam and simclr hyper params form OG source, we dont directly use these
+simsiam_hyper:
+  og_optimiser: 'sgd'
+  initial_lr: 0.0003 #SS 0.05 , SC 
+  weight_decay: 0.0001
+
+simclrv1_hyper:
+  og_optimiser: 'adam'
+  initial_lr: 0.0003
+  weight_decay: 0.0001

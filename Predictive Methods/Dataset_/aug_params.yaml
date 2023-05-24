@@ -1,0 +1,41 @@
+# Contains all hyperparameter information about the augmentations used for contrastive learning
+# Majority of these are copied from CLAR (https://arxiv.org/pdf/2010.09542.pdf)
+# Where exact values aren't given we make educated guesses or use defaults (snrs for noise addition)
+
+pitch_shift:
+  min_transpose_semitones: -15
+  max_transpose_semitones: 15
+
+fade:
+  fade_shapes: ['linear', 'logarithmic', 'exponential']
+  max_fade_in_ratio: 0.5
+  max_fade_out_ratio: 0.5
+
+white_noise:
+  min_snr_in_db: 3
+  max_snr_in_db: 30
+  min_f_decay: -1
+  max_f_decay: 0
+  
+mixed_noise:
+  min_snr_in_db: 3
+  max_snr_in_db: 30
+  min_f_decay: -2
+  max_f_decay: 2
+
+time_masking:
+  max_signal_ratio: 0.125
+  options: ['white_noise', 'constant']
+
+time_shift:
+  max_shift: 0.5
+  min_shift: -0.5
+  shift_unit: 'fraction'
+  rollover: True
+
+time_stretch:
+  min_stretch: 0.5
+  max_stretch: 1.5
+  n_fft: 2048
+
+
