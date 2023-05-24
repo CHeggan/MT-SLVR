@@ -1,7 +1,7 @@
 # MT-SLVR: Multi-Task Self-Supervised Learning for Transformation In(Variant) Representations
 A novel multi-task self-supervised learning approach, capable of learning both augmentation invariant and equivariant features in a parameter efficient manner.  
 
-![Logo](images/logo.png)
+![Logo](images/logo.png | width=200)
 
 ## News & Citation
  - Blog and more informal breakdown coming soon! 
