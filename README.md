@@ -5,7 +5,7 @@ A novel multi-task self-supervised learning approach, capable of learning both a
 <img src=images/logo.png data-canonical-src=images/logo.png width="100" height="100" />
 
 ## News & Citation
- - 1/6/23: Blog post with addiitonal details and diagrams released: https://cheggan.github.io/posts/2023/05/MT-SLVR_blog/
+ - 1/6/23: Blog post with additional details and diagrams released: https://cheggan.github.io/posts/2023/05/MT-SLVR_blog/
  - 29/5/23: Paper and code made public
  - 17/5/23: MT-SLVR accepted to InterSpeech23, to be presented in August 
 
