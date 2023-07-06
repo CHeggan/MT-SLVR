@@ -1,17 +1,28 @@
 # MT-SLVR: Multi-Task Self-Supervised Learning for Transformation In(Variant) Representations
 A novel multi-task self-supervised learning approach, capable of learning both augmentation invariant and equivariant features in a parameter efficient manner.  
 
+ArXiv version of the paper can be found [here](https://arxiv.org/abs/2305.17191)
 
 <img src=images/logo.png data-canonical-src=images/logo.png width="100" height="100" />
 
 ## News & Citation
- - 1/6/23: Blog post with additional details and diagrams released: https://cheggan.github.io/posts/2023/05/MT-SLVR_blog/
+ - 1/6/23: Blog post with additional details and diagrams released: [here]([https://arxiv.org/abs/2305.17191](https://cheggan.github.io/posts/2023/05/MT-SLVR_blog/))
  - 29/5/23: Paper and code made public
  - 17/5/23: MT-SLVR accepted to InterSpeech23, to be presented in August 
 
 
 ## Citation
-Citation to be added
+If you find this work useful or related to your own, please consider citing it:
+```
+@misc{heggan2023mtslvr,
+      title={MT-SLVR: Multi-Task Self-Supervised Learning for Transformation In(Variant) Representations}, 
+      author={Calum Heggan and Tim Hospedales and Sam Budgett and Mehrdad Yaghoobi},
+      year={2023},
+      eprint={2305.17191},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
 
 # MT-SLVR
 
