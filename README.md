@@ -26,7 +26,6 @@ If you find this work useful or related to your own, please consider citing it:
 
 # MT-SLVR
 <img src="./images/MT-SLVR Main Diagram.svg">
-**Schematic of MT-SLVR to be added**
 
 Simply put, the MT-SLVR algorithm utilises multi-task learning between contrastive and predictive self-supervised learning techniques. These features learnt by each of these algorithm are expected to be heavily conflicting (i.e one tries to learn augmentation invariance while the other tries to learn augmentation equivariance). To allow both to co-exist and be readily available for downstream tasks, we utilise adapters fit throughout the neural network, allowing each task (contrastive/predictive) some of its own specific parameters to learn upon. 
 
