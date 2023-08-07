@@ -64,3 +64,7 @@ Hyperparameter descriptions can be found in the ["NEW_RUN.py"](https://github.co
 
 ## Baseline Codebases
 Details on running baselines can be found in their respective sub-codebases. 
+
+
+## Pre-Trained Weights
+We also release the weights of the models used in the original work. The script along with the details on how to do this can be found [here]()
