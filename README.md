@@ -53,6 +53,8 @@ There are likely some redundant packages in this section, we will attempt to tri
 ## Datasets & Processing
  For pre-training we use the balanced version of [AudioSet](https://research.google.com/audioset/). The decision to use this set was based in ease and manageable size. Unfortunately this set is not easily available to download. This being said, the set can be reproduced using a YouTube scraping script. Details and references for this process can be found [here](https://github.com/CHeggan/AudioSet-For-Meta-Learning).
 
+## Pre-Trained Weights
+We also release the weights of the models used in the original work. The script along with the details on how to do this can be found [here](MT-SLVR/load_pretrained.py)
 
 ## MT-SLVR Pre-Training
 Additional details on how to run the the MT-SLVR can be found in its sub-codebase but the main line is of the format:
@@ -64,7 +66,3 @@ Hyperparameter descriptions can be found in the ["NEW_RUN.py"](https://github.co
 
 ## Baseline Codebases
 Details on running baselines can be found in their respective sub-codebases. 
-
-
-## Pre-Trained Weights
-We also release the weights of the models used in the original work. The script along with the details on how to do this can be found [here]()
