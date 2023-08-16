@@ -1,11 +1,12 @@
 # MT-SLVR: Multi-Task Self-Supervised Learning for Transformation In(Variant) Representations
 A novel multi-task self-supervised learning approach, capable of learning both augmentation invariant and equivariant features in a parameter efficient manner.  
 
-ArXiv version of the paper can be found [here](https://arxiv.org/abs/2305.17191)
+The paper can be found either in teh InterSpeech23 [proceedings](https://www.isca-speech.org/archive/interspeech_2023/heggan23_interspeech.html) or in [ArXiv](https://arxiv.org/abs/2305.17191).
 
 <img src=images/logo.png data-canonical-src=images/logo.png width="100" height="100" />
 
 ## News & Updates
+ - 16/8/23: Paper formally released by InterSpeech23, see [here](https://www.isca-speech.org/archive/interspeech_2023/heggan23_interspeech.html)
  - 8/8/23: Pre-trained wieghts for MT-SLVR models released
  - 1/6/23: Blog post with additional details and diagrams released: [here](https://cheggan.github.io/posts/2023/05/MT-SLVR_blog/)
  - 29/5/23: Paper and code made public
@@ -15,13 +16,13 @@ ArXiv version of the paper can be found [here](https://arxiv.org/abs/2305.17191)
 ## Citation
 If you find this work useful or related to your own, please consider citing it:
 ```
-@misc{heggan2023mtslvr,
-      title={MT-SLVR: Multi-Task Self-Supervised Learning for Transformation In(Variant) Representations}, 
-      author={Calum Heggan and Tim Hospedales and Sam Budgett and Mehrdad Yaghoobi},
-      year={2023},
-      eprint={2305.17191},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@inproceedings{heggan23_interspeech,
+  author={Calum Heggan and Tim Hospedales and Sam Budgett and Mehrdad Yaghoobi},
+  title={{MT-SLVR: Multi-Task Self-Supervised Learning for Transformation In(Variant) Representations}},
+  year=2023,
+  booktitle={Proc. INTERSPEECH 2023},
+  pages={4399--4403},
+  doi={10.21437/Interspeech.2023-1064}
 }
 ```
 
