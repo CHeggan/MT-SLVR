@@ -6,6 +6,7 @@ The paper can be found either in teh InterSpeech23 [proceedings](https://www.isc
 <img src=images/logo.png data-canonical-src=images/logo.png width="100" height="100" />
 
 ## News & Updates
+ - 23/8/23: Presented work in poster format at InterSpeech23. Poster released in this repo
  - 16/8/23: Paper formally released by InterSpeech23, see [here](https://www.isca-speech.org/archive/interspeech_2023/heggan23_interspeech.html)
  - 8/8/23: Pre-trained wieghts for MT-SLVR models released
  - 1/6/23: Blog post with additional details and diagrams released: [here](https://cheggan.github.io/posts/2023/05/MT-SLVR_blog/)
