@@ -1,7 +1,7 @@
 # MT-SLVR: Multi-Task Self-Supervised Learning for Transformation In(Variant) Representations
 A novel multi-task self-supervised learning approach, capable of learning both augmentation invariant and equivariant features in a parameter efficient manner.  
 
-The paper can be found either in teh InterSpeech23 [proceedings](https://www.isca-speech.org/archive/interspeech_2023/heggan23_interspeech.html) or in [ArXiv](https://arxiv.org/abs/2305.17191).
+The paper can be found either in the InterSpeech23 [proceedings](https://www.isca-speech.org/archive/interspeech_2023/heggan23_interspeech.html) or in [ArXiv](https://arxiv.org/abs/2305.17191).
 
 <img src=images/logo.png data-canonical-src=images/logo.png width="100" height="100" />
 
